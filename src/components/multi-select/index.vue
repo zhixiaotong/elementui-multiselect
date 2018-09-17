@@ -387,4 +387,7 @@ i {
 .pull-right{
   float: right;
 }
+.no-padding{
+  padding: 0;
+}
 </style>
