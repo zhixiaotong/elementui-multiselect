@@ -3,7 +3,7 @@
 > 基于element ui、vue的多选框，支持选项disabled，支持分页，输入框过滤，可显示或隐藏全选和清空项
 
 ## 预览效果：
-![Demo picture](https://github.com/zhixiaotong/elementui-multiselect/master/tree/demo.gif)
+![Demo picture](https://github.com/zhixiaotong/elementui-multiselect/blob/master/demo.gif)
 
 ## Build Setup
 
