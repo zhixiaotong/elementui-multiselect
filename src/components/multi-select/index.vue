@@ -357,7 +357,6 @@ export default {
 .uni-pagin {
   border-top: 1px solid #dcdfe6;
   padding: 5px;
-  height: 30px;
   clear: both;
 }
 i {
