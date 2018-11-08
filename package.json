@@ -2,7 +2,7 @@
   "name": "elementui-multiselect",
   "version": "1.0.0",
   "description": "基于element ui、vue的多选框，支持选项disabled，支持分页，输入框过滤，可显示或隐藏全选和清空项",
-  "author": "lz",
+  "author": "lz<947803089@qq.com>",
   "license":"MIT",
   "private": true,
   "scripts": {
