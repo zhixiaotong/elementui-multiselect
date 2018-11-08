@@ -1,5 +1,5 @@
 # elementui-multiselect
-<img src="https://camo.githubusercontent.com/6a40b4913be1852a0fe4a896c5912412202f9169/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4d49542d677265656e2e737667" alt="MIT License" data-canonical-src="https://img.shields.io/badge/license-MIT-green.svg" style="max-width:100%;">
+<img src="https://camo.githubusercontent.com/890acbdcb87868b382af9a4b1fac507b9659d9bf/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4d49542d626c75652e737667" alt="" data-canonical-src="https://img.shields.io/badge/license-MIT-blue.svg" style="max-width:100%;">
 
 > 基于element ui、vue的多选框，支持选项disabled，支持分页，输入框过滤，可显示或隐藏全选和清空项
 
