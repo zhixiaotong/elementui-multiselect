@@ -1,7 +1,5 @@
 <!--
-  author:lz
   dependency: el-input, el-popover, el-button-group, el-button
-  desc:支持过滤、分页、全选、反选等功能的多选框组件
   api:
         1) 基础使用：<multi-select v-model="value" :options="options" placeholder="请选择重点人员"></multi-select>
         2) 额外可传入的参数为 -> :page-size="pageSize" [pageSize:指定分页每页展示的数据,默认为6], :show-select="showSelect" [showSelect:是否显示全选和清空按钮, 默认为true]
@@ -9,7 +7,7 @@
 <template>
   <el-popover popper-class="el-select-dropdown is-multiple no-padding" trigger="click" v-model="visible" transition="el-zoom-in-top" :width="inputWidth">
     <div class="filter-input">
-      <el-input type="text" size="mini" v-model="query" :placeholder="filterPlaceholder" ref="filter"></el-input>
+      <el-input type="text" size="mini" v-model="query" :placeholder="filterPlaceholder" ref="filter" />
     </div>
     <p class="el-select-dropdown__empty" v-if="emptyText && currentOptions.length === 0">{{ emptyText }}</p>
     <!-- 存在过滤数据, 则展示 -->
@@ -25,10 +23,10 @@
     <!-- 全选清空 -->
     <div class="clearing" v-if="showSelect">
       <el-tooltip effect="dark" content="全选" placement="bottom">
-        <el-button icon="el-icon-circle-check-outline" class="select-btn pull-left" size="mini" @click="selectAll()"></el-button>
+        <el-button icon="el-icon-check" class="select-btn pull-left" size="mini" @click="selectAll" />
       </el-tooltip>
       <el-tooltip effect="dark" content="清空" placement="bottom">
-        <el-button icon="el-icon-delete" class="select-btn pull-right" size="mini" @click="unselectAll()"></el-button>
+        <el-button icon="el-icon-delete" class="select-btn pull-right" size="mini" @click="unselectAll" />
       </el-tooltip>
     </div>
     <!-- 分页信息 -->
@@ -39,16 +37,15 @@
         <i>{{totalPageIndex}}</i>&nbsp;页</div>
       <div class="pagin-content">
         <el-button-group>
-          <el-button icon="el-icon-arrow-left" class="pagin-btn" :disabled="pageIndex === 1" size="mini" @click="prev()"></el-button>
-          <el-button icon="el-icon-arrow-right" class="pagin-btn" :disabled="pageIndex === totalPageIndex" size="mini" @click="next()"></el-button>
+          <el-button icon="el-icon-arrow-left" class="pagin-btn" :disabled="pageIndex === 1" size="mini" @click="prev" />
+          <el-button icon="el-icon-arrow-right" class="pagin-btn" :disabled="pageIndex === totalPageIndex" size="mini" @click="next" />
         </el-button-group>
       </div>
     </div>
     <!-- 引用 -->
     <div class="el-select" :class="[selectSize ? 'el-select--' + selectSize : '']" slot="reference">
       <el-input type="text" v-model="selectedLabels" ref="reference" :id="id" :name="name" :placeholder="curPlaceholder" :auto-complete="autoComplete" :class="{'is-focus':visible}" readonly @keydown.native.esc.stop.prevent="visible = false" @keydown.native.tab="visible = false" @mouseenter.native="inputHovering = true" @mouseleave.native="inputHovering = false">
-        <i slot="suffix" :class="['el-select__caret', 'el-input__icon', 'el-icon-arrow-up']">
-        </i>
+        <i slot="suffix" :class="['el-select__caret', 'el-input__icon', 'el-icon-arrow-up']" />
       </el-input>
     </div>
   </el-popover>

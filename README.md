@@ -6,29 +6,30 @@
 ## 预览效果：
 ![Demo picture](https://github.com/zhixiaotong/elementui-multiselect/blob/master/demo.gif)
 
-## Build Setup
-
-``` bash
-# install dependencies
+## 安装项目依赖
+```
 npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### 本地开发者模式运行
+```
+npm run serve
+```
+
+### 线上模式打包运行
+```
+npm run build
+```
+
+### 执行测试
+```
+npm run test
+```
+
+### 提示和修复文件
+```
+npm run lint
+```
+
+### 自定义配置
+请参考 [Configuration Reference](https://cli.vuejs.org/config/).
