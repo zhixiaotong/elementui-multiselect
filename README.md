@@ -5,6 +5,9 @@
 
 > 项目采用vue开发,已更新为当前最新vue cli版本(version：3.8.2)脚手架搭建
 
+## 在线预览地址：
+https://zhixiaotong.github.io/demo-online/example/thumbnail
+
 ## 预览效果：
 ![Demo picture](https://github.com/zhixiaotong/elementui-multiselect/blob/master/demo.gif)
 
