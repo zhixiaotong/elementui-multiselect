@@ -9,7 +9,7 @@
 https://zhixiaotong.github.io/demo-online/example/elementui-multiselect
 
 ## 预览效果：
-![Demo picture](https://github.com/zhixiaotong/elementui-multiselect/blob/master/demo.gif)
+![Demo picture](./blob/master/demo.gif)
 
 ## 安装项目依赖
 ```
