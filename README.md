@@ -8,9 +8,6 @@
 ## 在线预览地址：
 https://zhixiaotong.github.io/demo-online/example/elementui-multiselect
 
-## 预览效果：
-![Demo picture](./blob/master/demo.gif)
-
 ## 安装项目依赖
 ```
 npm install
